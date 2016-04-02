@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estacionaí</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target = "#navbar" aria-expanded="false"
+          aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Estacionaí</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Opções</a></li>
+              <li><a href="#">Perfil</a></li>
+              <li><a href="#">Ajuda</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid" id="main">
+        <h3 class="page-header">Mapa</h3>
+
+
+        <div id="googleMap" style="height:400px;width:100%;"></div>
+
+        <!-- Add Google Maps -->
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script>
+        var pont1 = new google.maps.LatLng(-5.1024059,-42.8031699);
+        var pont2 = new google.maps.LatLng(-5.1024059,-42.8031699);
+
+        function initialize() {
+        var mapProp = {
+        center:myCenter,
+        zoom:12,
+        scrollwheel:false,
+        draggable:false,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+        var marker = new google.maps.Marker({
+        position:myCenter,
+        });
+
+        marker.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+        <hr/>
+        <div class="row" id="action">
+            <div class="col-md-12">
+              <a href="index.html" class="btn btn-primary">Voltar</a>
+            </div>
+        </div>
+        <hr/>
+    </div>
+    <footer class="container-fluid bg-4 text-center">
+      <br/>
+      <p>Todos os diretos reservador</p>
+      <p><a href="#">Ana Catharina</a> vs <a href="#"> João Carlos Barbosa</a></p>
+      <br/>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

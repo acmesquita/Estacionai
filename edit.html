@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estacionaí</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target = "#navbar" aria-expanded="false"
+          aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Estacionaí</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Opções</a></li>
+              <li><a href="#">Perfil</a></li>
+              <li><a href="#">Ajuda</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid" id="main">
+      <div class="jumbotron">
+        <h3 class="page-header">Cadastrar um Estacionamento</h3>
+        <form class="" action="index.html" method="post">
+          <!-- Area dos campos do form-->
+            <div class="row">
+              <div class="form-group col-md-5">
+                <label for="nome">Razão Social</label>
+                <input type="text" class="form-control" id="nome" placeholder="João Park">
+              </div>
+            </div>
+            <div class="row">
+            <h4 class="titulo">Enderço</h4>
+            <div class="form-group col-md-4">
+              <label for="rua">Rua</label>
+              <input type="text" class="form-control" id="rua" placeholder="Rua Felix Pacheco">
+            </div>
+            <div class="form-group col-md-1">
+              <label for="numero">Nº</label>
+              <input type="text" class="form-control" id="numero" placeholder="123">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="bairro">Bairro</label>
+              <input type="text" class="form-control" id="bairro" placeholder="Centro">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="cidade">Cidade</label>
+              <input type="text" class="form-control" id="cidade" value="Teresina">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="estado">Estado</label>
+              <input type="text" class="form-control" id="estado" value="Piauí">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-md-2">
+              <label for="vagas">Vagas</label>
+              <input type="text" class="form-control" id="vagas" placeholder="12">
+            </div>
+          </div>
+          <div class="row">
+            <h4 class="titulo">Horário de Funciomaneto</h4>
+            <div class="form-group col-md-2">
+              <label for="incial">Início</label>
+              <input type="time" class="form-control" id="inicio">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="fim">Termino</label>
+              <input type="time" class="form-control" id="fim">
+            </div>
+          </div>
+          <hr/>
+          <div class="row" id="action">
+              <div class="col-md-12">
+                <button type="submit" name="button" class="btn btn-primary">Salvar</button>
+                <a href="index.html" class="btn btn-defaut">Cancelar</a>
+              </div>
+          </div>
+        </form>
+        <hr/>
+      </div>
+    </div>
+    <footer class="container-fluid bg-4 text-center">
+      <br/>
+      <p>Todos os diretos reservador</p>
+      <p><a href="#">Ana Catharina</a> vs <a href="#"> João Carlos Barbosa</a></p>
+      <br/>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
