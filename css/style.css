@@ -1,0 +1,25 @@
+/*
+  style.css
+*/
+body{
+  padding-top: 50px;
+}
+.bg-4 {
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+nav{
+  background-color: #2f2f2f;
+}
+.titulo{
+  padding: 10px;
+}
+#conteudo{
+  padding: 20px;
+}
+.jumbotron {
+    background-color: #FFF; /* Branco */
+}
+.jumbotron p{
+  font-size: 14px;
+}
